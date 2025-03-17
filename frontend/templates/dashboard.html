@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Weight Loss Tracker</title>
+    
+    <!-- Styles & Favicon -->
+    <link rel="stylesheet" href="../static/dashboard.css">
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>  <!-- Chart.js für Diagramme -->
+    <script src="../static/dashboard.js" defer></script>
+    <script src="../static/darkmode.js" defer></script>
+
+</head>
+<body>
+
+    <!-- 🚀 Container für das Dashboard -->
+    <div class="container">
+        <header>
+            <h1>📊 Weight Loss Tracker</h1>
+            <p>Willkommen, <span id="user-name"></span>! Hier siehst du deinen Fortschritt.</p>
+        </header>
+
+        <main>
+            <!-- 🚀 Logout Button -->
+            <button id="logout-btn">🚪 Logout</button>
+
+            <!-- 📈 Diagramm für Gewicht -->
+            <section>
+                <h2>📉 Dein Fortschritt</h2>
+                <canvas id="weightChart" aria-label="Gewichtsverlauf Diagramm" role="img"></canvas>
+                <p>Dieses Diagramm zeigt deinen Gewichtsverlauf.</p>
+            </section>
+            
+            <section>
+                <h2>📊 Wöchentlicher Durchschnitt</h2>
+                <p></p> id="weekly-averge"Berechnung läuft...</p>
+            </section>
+
+            <!-- 📅 Gewichtseinträge -->
+            <section>
+                <h2>⚖️ Deine Gewichtsdaten</h2>
+                <form id="weight-form">
+                    <label for="weight-input">Neues Gewicht (kg):</label>
+                    <input type="number" id="weight-input" name="weight-input" placeholder="Neues Gewicht (kg)" required>
+                    <button type="submit" id="save-weight-btn">📥 Speichern</button>
+                </form>
+                <p id="weight-status"></p>
+            </section>
+            
+            <!-- 📋 Verlaufstabelle -->
+            <section>
+                <h3>📋 Verlauf</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Datum</th>
+                            <th>Gewicht (kg)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="weight-history">
+                        <!-- Gewichtsdaten werden hier eingefügt -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 📝 Notizenbereich -->
+            <section>
+                <h2>📝 Deine Notizen</h2>
+                <label for="notes">Deine Notizen:</label>
+                <textarea id="notes" placeholder="Hier kannst du deine Notizen speichern..."></textarea>
+                <button id="save-notes-btn">💾 Speichern</button>
+                <p id="note-status" aria-live="polite"></p>
+
+                <h3>📖 Gespeicherte Notizen:</h3>
+                <ul id="note-list"></ul> <!-- Hier erscheinen gespeicherte Notizen -->
+            </section>
+        </main>
+    </div>
+
+    <!-- 🌙 Dark Mode Button -->
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+</body>
+</html>

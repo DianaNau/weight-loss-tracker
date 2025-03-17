@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Loss Tracker - Login</title>
+    
+    <!--  Pfad zur CSS-Datei -->
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+    
+    <!--  JavaScript-Dateien  -->
+    <script src="../static/login.js" defer></script>
+    <script src="../static/darkmode.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Willkommen beim Weight Loss Tracker!</h1>
+        <p class="intro-text">
+            Du möchtest deinen Fortschritt genau im Blick behalten? Unser Tool hilft dir, dein Gewicht über Tage, Wochen und Monate hinweg zu verfolgen und deinen Fortschritt mit dynamischen Diagrammen zu analysieren.
+        </p>
+        
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Benutzername" required>
+                <input type="password" id="password" placeholder="Passwort" required>
+                <button type="submit">Anmelden</button>
+            </form>
+            <p id="login-error" class="error-message"></p>
+            <p>Noch keinen Account? <a href="register.html">Hier registrieren</a></p>
+        </div>
+    </div>
+    
+    <!--  Dark Mode Button -->
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+</body>
+</html>
+
+

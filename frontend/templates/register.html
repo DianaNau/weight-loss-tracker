@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierung - Weight Loss Tracker</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+    <script src="../static/darkmode.js" defer></script>
+    <script src="../static/register.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Registrierung</h1>
+        <p class="intro-text">Erstelle einen Account, um dein Gewicht zu verfolgen und deinen Fortschritt auszuwerten.</p>
+        
+        <div class="form-container">
+            <form id="register-form">
+                <label for="username">Benutzername:</label>
+                <input type="text" id="username" name="username" placeholder="Benutzername" required>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="E-Mail" required>
+
+                <label for="password">Passwort:</label>
+                <input type="password" id="password" name="password" placeholder="Passwort" required>
+
+                <button type="submit">Registrieren</button>
+            </form>
+
+            <p id="register-error" class="error-message"></p>
+            <p id="register-message" class="success-message"></p>
+
+            <p>Schon registriert? <a href="index.html">Hier einloggen</a></p>
+        </div>
+    </div>
+    
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+</body>
+</html>
+
+
+
+
+
+
