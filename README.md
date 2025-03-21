@@ -55,5 +55,5 @@ POST	/api/weight-entries/	Neues Gewicht speichern
 POST	/api/logout/	Logout & Token löschen
 👨‍💻 Entwickler
 📌 Diana Naumovic – Entwicklerin
-
+🚧 Work in Progress: Dieses Projekt ist noch nicht final – ich arbeite aktiv daran, neue Features hinzuzufügen und bestehende zu verbessern.
 Falls du Fragen oder Feedback hast, schreib mir gerne! ✉️
