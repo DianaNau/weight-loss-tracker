@@ -17,10 +17,7 @@ Backend: Django & Django Rest Framework (DRF)
 Frontend: HTML, CSS, JavaScript
 Datenbank: SQLite
 Diagramme: Chart.js
-Hosting (optional): GitHub Pages / Render
-📦 Installation
-1️⃣ Projekt klonen
-Falls du das Projekt von GitHub herunterladen möchtest:
+
 
 sh
 Kopieren
